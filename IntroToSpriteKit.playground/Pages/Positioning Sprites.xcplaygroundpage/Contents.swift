@@ -116,14 +116,17 @@ Once you have selected the block of code, press the **Command** and / keys at th
  */
 
 // Exercise 1: Write your code below.
-
-
+let star = SKSpriteNode(imageNamed:"star")
+star.position = CGPoint(X: scene.size.width/2, y: scene.size.height/2)
+scene.addChild(star)
 // Exercise 2: Write your code below.
-
-
+let circle = SKSpriteNode(imageNamed:"circle")
+circle.position = CGPoint(X: scene.size.width, y:scene.size.height)
+scene.addChild(circle)
 // Exercise 3: Write your code below.
-
-
+let square = SKSpriteNode(imageNamed:"square")
+square.position = CGPoint(X: scene.size.width/2. Y: scene.size.height)
+scene.addChild(square)
 /*:
 
  [Previous: Creating a SpriteKit Scene](@previous) | Page 3 | [Next: Physics Engine](@next)

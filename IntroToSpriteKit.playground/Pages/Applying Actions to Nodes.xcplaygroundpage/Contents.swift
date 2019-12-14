@@ -105,8 +105,8 @@ let actionUpwardsMovement = SKAction.move(by: upThisMuch, duration: 0.5)
  
  */
 
-//// 1. Make the first circle move up immediately (runs a single action, once)
-//circle1.run(actionUpwardsMovement)
+// 1. Make the first circle move up immediately (runs a single action, once)
+circle1.run(actionUpwardsMovement)
 
 //// Define a sequence that involves a:
 //// * five second wait
