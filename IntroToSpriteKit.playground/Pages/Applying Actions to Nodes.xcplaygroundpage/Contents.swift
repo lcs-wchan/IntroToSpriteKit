@@ -172,10 +172,13 @@ circle3.run(waitAndThenRepeatedlyFadeOutAndIn)
  */
 
 // Exercise 1: Write your code below.
-
+let actionWait = SKAction.wait(duration: 20)
+circle1.run(actionWait)
 
 // Exercise 2: Write your code below.
-
+let actionMoveUp = CGVector(dx:0, dy:50)
+let actionMoveleft = CGVector(dx:-50, dy:0)
+circle2.run(actionWait, actionMoveUp, actionMoveleft)
 
 // Exercise 3: Write your code below.
 

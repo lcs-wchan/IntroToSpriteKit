@@ -58,7 +58,7 @@ func spawnSand() {
     let y = scene.size.height - sand.size.height
 
     // Horizontal position is random
-    let x = CGFloat(Double.random(in: 0.0...Double(scene.size.width)))
+    let x = CGFloat(Double.random(in: Double(scene.size.width/4)...Double(3*scene.size.width/4)))
 
     // Set the grain of sand's position
     sand.position = CGPoint(x: x, y: y)
@@ -90,12 +90,12 @@ func spawnSand() {
  
  */
 
-//// Add 100 sand particles, one each second, for the next 50 seconds
-//let actionSpawnSandParticle = SKAction.run(spawnSand)
-//let actionWait = SKAction.wait(forDuration: 0.5)
-//let sequenceSpawnThenWait = SKAction.sequence([actionSpawnSandParticle, actionWait])
-//let actionRepeatlyAddSand = SKAction.repeat(sequenceSpawnThenWait, count: 100)
-//scene.run(actionRepeatlyAddSand)
+// Add 100 sand particles, one each second, for the next 50 seconds
+let actionSpawnSandParticle = SKAction.run(spawnSand)
+let actionWait = SKAction.wait(forDuration: 0.5)
+let sequenceSpawnThenWait = SKAction.sequence([actionSpawnSandParticle, actionWait])
+let actionRepeatlyAddSand = SKAction.repeat(sequenceSpawnThenWait, count: 100)
+scene.run(actionRepeatlyAddSand)
 
 /*:
  ### Exercises

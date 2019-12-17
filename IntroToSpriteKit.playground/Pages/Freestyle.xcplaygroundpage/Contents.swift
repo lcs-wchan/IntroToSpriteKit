@@ -31,3 +31,6 @@ PlaygroundSupport.PlaygroundPage.current.liveView = view
  [Previous: Adding Nodes Repeatedly](@previous) | Page 7
  
  */
+let tennisBall = SKSpriteNode(imageNamed: "tennis-ball")
+let tennisRacket = SKSpriteNode(imageNamed: "tennis-racket")
+tennisBall.position = GCPoint(x:scene.size.width/2, y:scene)
